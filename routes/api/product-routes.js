@@ -36,17 +36,11 @@ router.get("/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ["id", "product_name", "price", "stock"],
-    include: [
-      {
-        model: Category,
-        attributes: ["category_name"],
-      },
-      {
-        model: Tag,
-        attributes: ["tag_name"],
-      },
-    ],
+    include: {
+      model: Category,
+      model: Tag,
+      attributes: ["id", "product_name", "price", "stock"],
+    },
   })
     .then((dbProductData) => res.json(dbProductData))
     .catch((err) => {
