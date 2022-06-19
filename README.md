@@ -1,7 +1,7 @@
 # E-Commerce
  
   ![Walkthrough Video](https://github.com/samschool789/e-commerce/blob/main/gif/readme.gif)
- 
+  ![Link](https://github.com/samschool789/e-commerce/blob/main/video/video.mp4)
   
    ## Description 
   I made an application where it organizes products based on the category, type of product, tags and associated IDs
